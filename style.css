@@ -1,0 +1,113 @@
+html, body {
+  height: 100%; /* Ensure both html and body take full height */
+  margin: 0; /* Remove default margin */
+}
+
+body {
+  background-color: #f8f9fa;
+  background-image: url('images/img.jpg'); /* Replace with your image path */
+  background-size: cover; /* Ensures the image covers the entire body */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-position: center; /* Centers the image in the body */
+}
+  
+
+h1 {
+  color: blue;
+  font-weight: 600;
+  font-size: 3.6rem;
+}
+
+#taskForm input, #taskForm select {
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.btn {
+  border-radius: 20px;
+}
+
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.completed-task {
+  text-decoration: line-through;
+  color: #28a745;
+}
+
+.pending-task {
+  color: #dc3545;
+}
+
+#taskList li {
+  transition: all 0.3s ease;
+}
+
+#taskList li:hover {
+  background-color: #f1f1f1;
+}
+
+.priority-high {
+  background-color: #ffcccc;
+}
+
+.priority-medium {
+  background-color: #fff3cd;
+}
+
+.priority-low {
+  background-color: #cce5ff;
+}
+
+.category {
+  font-style: italic;
+  font-size: 0.9em;
+  color: #6c757d;
+}
+/* Increase size of the task input field */
+#taskInput {
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+/* Style the button to make it larger */
+.btn-lg {
+    margin-right: 3px;
+}
+
+/* Add some spacing between form elements */
+.mb-3, .mb-2 {
+    margin-bottom: 1rem;
+}
+
+/* Ensure that the form elements are responsive */
+@media (max-width: 768px) {
+    .col-md-4 {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+.btn-customi {
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-size: 1rem;
+    height: 50px; /* Set button height to match input field */
+    display: flex;
+    align-items: center;
+}
+
+.btn-custom {
+  background-color: #0d6efd; /* Change the background color to blue */
+  color: white; /* Change the text color to white */
+  border-color: #0d6efd; /* Match the border color with the background */
+}
+
+.btn-custom:hover {
+  background-color: blue; /* Darker shade on hover */
+  border-color: blue; /* Darker border on hover */
+}
