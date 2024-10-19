@@ -10,6 +10,10 @@ body {
   background-repeat: no-repeat; /* Prevents the image from repeating */
   background-position: center; /* Centers the image in the body */
 }
+
+.img{
+  border-radius: 30px;
+}
   
 
 h1 {
